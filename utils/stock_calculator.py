@@ -147,8 +147,8 @@ class StockCalculator:
             Dictionary with summary statistics
         """
         total_products = len(results)
-        excess_products = len(results[results['Status'] == 'Excess'])
-        shortage_products = len(results[results['Status'] == 'Shortage'])
+        excess_products = len(results[results['Status'] == 'Shortage'])
+        shortage_products = len(results[results['Status'] == 'Excess'])
         balanced_products = len(results[results['Status'] == 'Balanced'])
         
         # Calculate total excess and shortage in pieces
