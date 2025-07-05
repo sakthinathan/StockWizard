@@ -1,0 +1,27 @@
+INSTALLATION INSTRUCTIONS
+========================
+
+To run this Biscuit Stock Management System:
+
+1. Install Python 3.8 or higher
+2. Install required packages:
+   pip install streamlit pandas openpyxl
+
+3. Run the application:
+   streamlit run app.py
+
+4. Open your browser to the URL shown (usually http://localhost:8501)
+
+FEATURES:
+- Upload Excel files with SKU data
+- Set target quantities for each product
+- Calculate excess/shortage using Target - Current logic
+- Export detailed reports
+- Real-time preview calculations
+
+Your Excel file should have these columns:
+- SKU
+- Product Name  
+- Current Stock (Boxes)
+- Current Stock (Pieces)
+- Pieces per Box
